@@ -1,0 +1,11 @@
+@mixin user-select($property) {
+    -webkit-user-select: $property;
+    -moz-user-select: $property;
+    user-select: $property;
+}
+
+@mixin display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

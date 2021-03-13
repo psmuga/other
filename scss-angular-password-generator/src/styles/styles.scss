@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: consolas;
-    user-select: none;
+    @include abstracts.user-select(none);
 }
 
 body {

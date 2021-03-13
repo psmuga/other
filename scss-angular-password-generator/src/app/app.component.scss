@@ -1,9 +1,8 @@
 @use '/src/styles/components';
+@use '/src/styles/abstracts/mixins';
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixins.display-center;
     min-height: 50vh;
 }
 
