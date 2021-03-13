@@ -1,0 +1,13 @@
+@use '/src/styles/abstracts/colors';
+
+.header {
+    padding-top: clamp(50px, 15vh, 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 36px;
+    color: colors.$font-color-primary;
+}

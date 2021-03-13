@@ -1,0 +1,16 @@
+@use '../abstracts';
+
+.custom-button {
+    position: relative;
+    cursor: pointer;
+    color: abstracts.$font-color-secondary;
+    background: abstracts.$font-color-primary;
+    font-size: abstracts.$font-size-small;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.custom-button:active {
+    background: abstracts.$background-color-secondary;
+}

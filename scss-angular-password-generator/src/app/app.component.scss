@@ -1,0 +1,25 @@
+@use '/src/styles/components';
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.inputBox {
+    position: relative;
+    width: 450px;
+}
+
+.copy {
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.copy:hover {
+    opacity: 1;
+}

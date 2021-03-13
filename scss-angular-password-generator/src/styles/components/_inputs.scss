@@ -1,0 +1,25 @@
+@use '../abstracts';
+
+input.custom-input {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin: 15px 0 20px;
+    background: transparent;
+    outline: none;
+    padding: 0 20px;
+    font-size: abstracts.$font-size;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: abstracts.$font-color-primary;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255,1),
+                inset 4px 4px 10px rgba(0,0,0,0.05),
+                inset -4px -4px 10px rgba(255, 255, 255,1),
+                4px 4px 10px rgba(0,0,0,0.05);
+}
+
+input::placeholder.custom-input {
+    letter-spacing: 0px;
+}
