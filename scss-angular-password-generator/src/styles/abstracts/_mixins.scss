@@ -1,7 +1,7 @@
-@mixin user-select($property) {
-    -webkit-user-select: $property;
-    -moz-user-select: $property;
-    user-select: $property;
+@mixin prefix($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    #{$property}: $value;
 }
 
 @mixin display-center {
