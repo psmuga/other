@@ -1,12 +1,18 @@
-@use '/src/styles/abstracts/colors';
-@use '/src/styles/abstracts/mixins';
+@use '/src/styles/abstracts';
 
 .header {
     padding-top: clamp(50px, 15vh, 200px);
-    @include mixins.display-center;
+    @include abstracts.display-center;
 }
 
 .header h2 {
-    font-size: 36px;
-    color: colors.$font-color-primary;
+    font-size: 30px;
+    color: abstracts.$font-color-primary;
+
+    @include abstracts.screen-size(medium) {
+        font-size: 36px;
+    }
+    @include abstracts.screen-size(large) {
+        font-size: 42px;
+    }
 }

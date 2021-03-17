@@ -1,3 +1,6 @@
+@use 'sass:map';
+@use './breakpoints';
+
 @mixin prefix($property, $value) {
     -webkit-#{$property}: $value;
     -moz-#{$property}: $value;
@@ -8,4 +11,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin screen-size($key) {
+    $size: map.get(breakpoints.$breakpoints, $key);
+
+    @media (min-width: $size) {
+        @content;
+    }
 }
