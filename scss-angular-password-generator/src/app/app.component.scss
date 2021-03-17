@@ -1,5 +1,6 @@
 @use '/src/styles/components';
 @use '/src/styles/abstracts/mixins';
+@use '/src/styles/abstracts/colors';
 
 .content {
     @include mixins.display-center;
@@ -8,6 +9,7 @@
 
 .inputBox {
     position: relative;
+    color: colors.$icon-color;
     width: 450px;
 }
 

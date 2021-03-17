@@ -2,3 +2,7 @@ $background-color-primary: #f8f8f8;
 $background-color-secondary: #9c27b0;
 $font-color-primary: #333;
 $font-color-secondary: #fff;
+
+// rgba is scss method as well
+// it allows to set transparency comfortably
+$icon-color: rgba($font-color-primary, .6);
