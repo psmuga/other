@@ -1,22 +1,21 @@
 $columns: 12;
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-// for all elements with class started with 'col-' set inital main size 
-[class^=col-] {
-    flex-basis: 100%;
+// for all elements with class started with 'col-' set inital main size
+[class^="col-"] {
+  flex-basis: 100%;
 }
-
 
 @for $i from 1 through $columns {
-    .col-#{$i} {
-        flex: 0 0 (100% / ($columns / $i));
-    }
+  .col-#{$i} {
+    flex: 0 0 (100% / ($columns / $i));
+  }
 
-    .col-offset-#{$i} {
-        margin-left: 100% / ($columns / $i);
-    }
+  .col-offset-#{$i} {
+    margin-left: 100% / ($columns / $i);
+  }
 }

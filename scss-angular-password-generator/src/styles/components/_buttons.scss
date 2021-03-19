@@ -3,16 +3,16 @@
 $rounded-corners: true;
 
 .custom-button {
-    position: relative;
-    cursor: pointer;
-    color: abstracts.$font-color-secondary;
-    background: abstracts.$font-color-primary;
-    font-size: abstracts.$font-size-small;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: if($rounded-corners, 8px, null);
+  position: relative;
+  cursor: pointer;
+  color: abstracts.$font-color-secondary;
+  background: abstracts.$font-color-primary;
+  font-size: abstracts.$font-size-small;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: if($rounded-corners, 8px, null);
 }
 
 .custom-button:active {
-    background: abstracts.$background-color-secondary;
+  background: abstracts.$background-color-secondary;
 }

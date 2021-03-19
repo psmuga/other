@@ -3,24 +3,24 @@
 @use '/src/styles/abstracts/colors';
 
 .content {
-    @include mixins.display-center;
-    min-height: 50vh;
+  @include mixins.display-center;
+  min-height: 50vh;
 }
 
 .inputBox {
-    position: relative;
-    color: colors.$icon-color;
-    width: 450px;
+  position: relative;
+  color: colors.$icon-color;
+  width: 450px;
 }
 
 .copy {
-    position: absolute;
-    top: 33px;
-    right: 20px;
-    cursor: pointer;
-    opacity: 0.2;
+  position: absolute;
+  top: 33px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0.2;
 }
 
 .copy:hover {
-    opacity: 1;
+  opacity: 1;
 }

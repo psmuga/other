@@ -1,13 +1,13 @@
 @use 'abstracts';
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: consolas;
-    @include abstracts.prefix(user-select, none);
+  margin: 0;
+  padding: 0;
+  font-family: consolas;
+  @include abstracts.prefix(user-select, none);
 }
 
 body {
-    min-height: 100vh;
-    background: abstracts.$background-color-primary;
+  min-height: 100vh;
+  background: abstracts.$background-color-primary;
 }

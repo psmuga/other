@@ -2,21 +2,21 @@
 @use './breakpoints';
 
 @mixin prefix($property, $value) {
-    -webkit-#{$property}: $value;
-    -moz-#{$property}: $value;
-    #{$property}: $value;
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  #{$property}: $value;
 }
 
 @mixin display-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin screen-size($key) {
-    $size: map.get(breakpoints.$breakpoints, $key);
+  $size: map.get(breakpoints.$breakpoints, $key);
 
-    @media (min-width: $size) {
-        @content;
-    }
+  @media (min-width: $size) {
+    @content;
+  }
 }
