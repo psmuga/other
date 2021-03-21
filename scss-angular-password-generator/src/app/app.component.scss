@@ -1,6 +1,6 @@
 @use '/src/styles/components';
-@use '/src/styles/abstracts/mixins';
-@use '/src/styles/abstracts/colors';
+@use 'styles/abstracts/mixins';
+@use 'styles/abstracts/colors';
 
 .content {
   @include mixins.display-center;
